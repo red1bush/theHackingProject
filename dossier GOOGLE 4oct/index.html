@@ -1,35 +1,51 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Red1's Google</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
-  <body>
-
-    <div class="main-nav">
-        <ul class="nav">
-          <li><a href="#">Gmail</a></li>
-          <li><a href="#">Images</a></li>
-          <li><a href="#">Maps</a></li>
-          <li><a href="#">Actualité</a></li>
-        </ul>
+    <head>
+        <meta charset="utf-8">
+        <title>Red1's Google</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
         
-    </div>
-
-    <header>
-      <img src="images/me.jpg" alt="Drawing of Jane Smith" class="profile-image">
-        <form action="/search" id="f" method="get"><div id="hf">
+    </head>
+    <body>
+       
+        
+        <header>
+      <div class="main-nav">
+            <ul class="nav">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">Actualité</a></li>
+            </ul>
+        </div>  
+                      
     </header>
-</div><div class="init" id="fkbx"><div id="fkbx-text">Rechercher sur Google ou saisir une URL</div><input id="q" aria-hidden="true" autocomplete="off" name="q" tabindex="3" type="url" jsaction="mousedown:ntp.fkbxclk"><div id="fkbx_crt"></div><div id="fkbx-spch" tabindex="0"></div><div id="fkbx-hspch" tabindex="0"></div><div id="fkbx-hht">Dites "Ok Google"</div>
-    <main class="flex">
-        
-      </div> 
+       
+<div id="container">
+     
+  <div id="container3" style="display: none;"> 
+<img src="images/me.jpg" alt="Logo de Google" class="profile-image">
+        <form action="#">
+                        
+                        <input id="rechercheGoogle" type="text" name="name" placeholder="Rechercher sur Google ou saisir une URL"><br/><br/>
+                        <input type="submit" value="Recherche Google" onclick="recherche();">         
 
-    </main>
-    <footer>
-      <p class="copyright">Copyright 2017, BOUCHANE Rédouane THP</p>
-    </footer>
-  </body>
-  </html>
+                    </form> 
+        
+    </div>                 
+           <button id="container2" class="monBouton" onclick="afficherContenu();">AFFICHER LES ELEMENTS CENTRAUX</button>        
+</div>
+
+    
+
+
+         <footer>
+                        <p class="copyright">Copyright 2017, BOUCHANE Rédouane THP</p>
+                    </footer>
+                    <script src="scripts/main.js"></script> 
+        <script>window.setTimeout(popup,10000)</script>
+    
+    </body>
+                </html>
