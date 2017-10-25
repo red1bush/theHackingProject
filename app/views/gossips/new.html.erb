@@ -1,0 +1,12 @@
+<h1> Hello, Welcome to Gossip Land!! </h1>
+
+<h1> Creer un gossip</h1>
+<%= form_tag (gossips_path) do %>
+<%= label_tag 'author', 'auteur' %>
+    <%= text_field_tag 'author' %>
+    <%= label_tag 'content', 'ton gossip' %>
+    <%= text_field_tag 'author' %>
+    <%= submit_tag "Poster un gossip"%>
+<% end %>
+
+<p> whatsup </p>
